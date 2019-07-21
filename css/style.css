@@ -1,0 +1,339 @@
+/* main elements */
+
+html {
+	font-size: 4vw;
+	letter-spacing: 0.05em;
+}
+
+body {
+	margin: 0;
+	color: #AAA;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+@media only screen and (min-width: 900px) {
+
+	body {
+		font-size: 1vw;
+	}
+
+}
+
+img {
+	display: block;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.title {
+	color: #424242;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.row {
+	display: inline-block;
+	justify-content: space-between;
+	padding-bottom: 1%;
+}
+
+.row img, .social-media img {
+	max-width: 100%;
+}
+
+.row::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.column {
+	float: left;
+	margin: 1%;
+}
+
+.two { 
+	max-width: 100%;
+}
+
+.three {
+	max-width: 100%;
+}
+
+.four { 
+	max-width: 100%;
+}
+
+@media only screen and (min-width: 900px) {
+
+	.row {
+		display: flex;
+	}
+
+	.two { 
+		width: 50%;
+	}
+
+	.three {
+		width: 33.33%;
+	}
+
+	.four { 
+		width: 25%;
+	}
+
+}
+
+/* header area */
+/* main title and navbar */
+
+.header {
+	margin: 1% 0;
+	padding: 0 1%;
+	border-bottom: #E5E5E5 solid 1px;
+}
+
+.main-title {
+	padding: 1%;
+	color: #000;
+	font-weight: 700;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.navbar {
+	margin: 0 1%;
+	color: #424242;
+	text-transform: uppercase;
+	text-align: left;
+	font-weight: 700;
+	font-size: 1em;
+}
+
+.navbar ul {
+	padding: 0;
+	list-style-type: none;
+}
+
+.search {
+	float: right;
+}
+
+.basket {
+	float: right;
+	margin-right: 5%;
+}
+
+.search img, .basket img {
+	height: 1em;
+	width: 1em;
+}
+
+@media only screen and (min-width: 900px) {
+
+	.navbar {
+		margin: 0 10%;
+		font-size: 1em;
+		text-align: center;
+	}
+
+	.navbar ul li {
+		display: inline-block;
+		padding: 0 3%;
+	}
+
+	.search {
+		float: left;
+	}
+
+	.search img, .basket img {
+		padding-top: 20%;
+	}
+
+	.basket {
+		margin-right: 0;
+	}
+
+}
+
+/* main content area */
+/* whitby range and images with information */
+
+.main-content {
+	margin: 0 1%;
+}
+
+@media only screen and (min-width: 900px) {
+
+	.main-content {
+		margin: 0 10%;
+	}
+
+}
+
+.with-info {
+	position: relative;
+}
+
+.item-info-wrap {
+	z-index: 2;
+	position: absolute;
+	bottom: 8%;
+	left: 8%;
+	right: 8%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 1%;
+	background: #FFF;
+}
+
+.item-info {
+	padding: 7%;
+	border: #E5E5E5 solid 1px;
+	text-align: center;
+}
+
+.item-info-title {
+	padding-bottom: 4%;
+	font-size: 1.5em;
+	text-transform: uppercase;
+}
+
+.item-info-content {
+	font-family: 'Times New Roman', serif;
+}
+
+/* favourites area */
+/* including prices and sale information */
+
+.favourites {
+	padding: 3% 0;
+	text-align: center;
+}
+
+.favourites .title {
+	font-size: 1.5em;
+}
+
+.favourites .content {
+	margin-bottom: 8%;
+	font-family: 'Times New Roman', serif;
+	font-style: italic;
+}
+
+@media only screen and (min-width: 900px) {
+
+	.favourites .content {
+		margin-bottom: 1%;
+	}
+
+}
+
+.item {
+	text-align: center;
+}
+
+.item .title {
+	margin: 2% 0;
+}
+
+.old-price {
+	color: #7F7F7F;
+	text-decoration: line-through;
+}
+
+.on-sale {
+	position: relative;
+}
+
+.sale-tag img {
+	position: absolute;
+	height: 4em;
+	width: auto;
+	top: -7%;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media only screen and (min-width: 900px) {
+
+	.sale-tag img {
+		height: 2.5em;
+		top: -6%;
+	}
+
+}
+
+/* footer area */
+/* faq, delivery, t&cs, contact, social networking, copyright and made by information */
+
+.footer {
+	margin: 4% 0 5%;
+	border-top: #E5E5E5 solid 1px;
+	text-align: center;
+}
+
+.more-info {
+	margin-bottom: 3%;
+	border-bottom: #E5E5E5 solid 1px;
+}
+
+.more-info ul {
+	list-style-type: none;
+}
+
+.more-info ul, .social-media ul {
+	padding: 0;
+	list-style-type: none;
+}
+
+.more-info ul li, .social-media ul li {
+	text-transform: uppercase;
+}
+
+@media only screen and (min-width: 900px) {
+
+	.more-info ul li {
+		display: inline-block;
+		margin: 0 3%;
+	}
+
+}
+
+.social-media {
+	margin-bottom: 2%;
+}
+
+.social-media ul li {
+	display: inline-block;
+	max-width: 5%;
+	margin: 0 2%;
+	padding: 1%;
+	border: #E5E5E5 solid 1px;
+	border-radius: 50%;
+}
+
+@media only screen and (min-width: 900px) {
+
+	.social-media ul li {
+		max-width: 1%;
+	}
+
+}
+
+.copyright {
+	margin-bottom: 1%;
+}
+
+.made {
+	color: #424242;
+	font-family: 'Times New Roman', serif;
+	font-style: italic;
+}
+
